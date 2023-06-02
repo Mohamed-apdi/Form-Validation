@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-20deg, #fdb095, lightblue);
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    background: #fff;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(0, 0, 0, 0.4);
+}
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+}
+.container h1 span {
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+    color: #fdb095;
+}
+.form {
+    padding: 10px;
+}
+.form-control {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #a7a1a0;
+}
+.form-control input:focus {
+    outline: none;
+    border-bottom: 2px solid #1d1a1a;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.form-control .fa-check {
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    color: rgb(100, 205, 100);
+    visibility: hidden;
+}
+.form-control .fa-circle-exclamation {
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    color: rgb(216, 63, 63);
+    visibility: hidden;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #908f8e;
+    background-color: #fdb095;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+    border: 1px solid #1d1a1a;
+}
+
+.form-control.error input {
+    border-bottom: 2px solid rgb(216, 63, 63);
+}
+.form-control.success input {
+    border-bottom: 2px solid #31ca15;
+}
+
+.form-control small {
+    color: rgb(216, 63, 63);
+    visibility: hidden;
+}
+.form-control.error small {
+    visibility: visible;
+}
